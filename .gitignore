@@ -7,3 +7,5 @@ pom.xml
 *.gif
 *.png
 *.clj
+.idea/
+target/
