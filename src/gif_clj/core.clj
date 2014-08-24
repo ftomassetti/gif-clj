@@ -1,5 +1,7 @@
 (ns gif-clj.core
-  (:import AnimatedGifEncoder [java.com.github.gif AnimatedGifEncoder]))
+  (:import [java.com.github.gif.com.github.gif AnimatedGifEncoder])
+  (:import AnimatedGifEncoder [java.com.github.gif AnimatedGifEncoder]
+           [java.com.github.gif.com.github.gif AnimatedGifEncoder]))
 
 (defn write-gif [filename imgs delay loops]
   (let [encoder
@@ -12,7 +14,6 @@
 	  [img imgs]
 	(if img (.addFrame encoder img)))
       (.finish encoder))))
-
 
 (defn load-image [file]
   (try (javax.imageio.ImageIO/read file)
