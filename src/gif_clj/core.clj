@@ -1,5 +1,5 @@
 (ns gif-clj.core
-  (:import AnimatedGifEncoder))
+  (:import AnimatedGifEncoder [java.com.github.gif AnimatedGifEncoder]))
 
 (defn write-gif [filename imgs delay loops]
   (let [encoder

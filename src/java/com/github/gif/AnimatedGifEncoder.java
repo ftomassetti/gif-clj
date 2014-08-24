@@ -1,15 +1,16 @@
+package java.com.github.gif;
 
 import java.io.*;
 import java.awt.*;
 import java.awt.image.*;
 
 /**
- * Class AnimatedGifEncoder - Encodes a GIF file consisting of one or more
+ * Class java.com.github.gif.AnimatedGifEncoder - Encodes a GIF file consisting of one or more
  * frames.
  *
  * <pre>
  *  Example:
- *     AnimatedGifEncoder e = new AnimatedGifEncoder();
+ *     java.com.github.gif.AnimatedGifEncoder e = new java.com.github.gif.AnimatedGifEncoder();
  *     e.start(outputFileName);
  *     e.setDelay(1000);   // 1 frame per sec
  *     e.addFrame(image1);
